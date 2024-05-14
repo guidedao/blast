@@ -7,7 +7,7 @@ interface IBlastPoints {
 }
 
 contract GuideDAO {
-  construtor(address _pointsOperator) {
+  constructor(address _pointsOperator) {
     IBlastPoints(0x2536FE9ab3F511540F2f9e2eC2A805005C3Dd800).configurePointsOperator(_pointsOperator);
   }
 }
